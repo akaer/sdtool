@@ -26,12 +26,12 @@
 #SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-CCARCH=
+CCARCH=arm-linux-gnueabihf-
 CC=$(CCARCH)gcc
 STRIP=$(CCARCH)strip
 
-CFLAGS=-c -Wall -Werror 
-LDFLAGS=
+CFLAGS=-c -Wall -Werror -O2
+LDFLAGS=-static
 
 EXECUTABLE=sdtool
 INCLUDES=sd.h sdlinux.h
